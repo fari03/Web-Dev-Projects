@@ -1,0 +1,38 @@
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#clock-container {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+#clock {
+  position: absolute;
+}
+
+.pattern1 {
+  background: url('1.jpg');
+}
+
+.pattern2 {
+  background: url('2.jpg');
+}
+
+.pattern3 {
+  background: url('3.jpg');
+}
