@@ -1,0 +1,63 @@
+/* CSS styles for the resume builder website */
+
+/* Background color */
+body {
+    background-color: #f8f9fa; 
+  }
+  
+  /* Container styles */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+  /* Form styles */
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label,
+  input,
+  textarea,
+  select {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  /* Submit button styles */
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* transition for hover effect */
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3; 
+  }
+  
+  /* Animation styles  */
+  .animate__animated {
+    animation-duration: 1s; 
+    animation-fill-mode: both;
+  }
+  
+  .animate__fadeIn {
+    animation-name: animate__fadeIn;
+  }
+  
+  .animate__fadeOut {
+    animation-name: animate__fadeOut;
+  }
+  
