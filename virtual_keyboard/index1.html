@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Virtual Keyboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="rt-container">
+        <h1 class="rt-heading">Virtual Keyboard</h1>
+        <select id="font-select" class="font-select">
+            <option value="">Select Font</option>
+            <option value="Arial">Arial</option>
+            <option value="Helvetica">Helvetica</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Courier New">Courier New</option>
+        </select>
+        <div>
+            <button id="font-increase">+</button>
+            <button id="font-decrease">-</button>
+        </div>
+        <textarea id="input-field" class="use-keyboard-input" rows="4" cols="50"></textarea>
+    </div>
+    <div class="input-cursor"></div> <!-- Add a div for the text cursor -->
+</body>
+</html>
