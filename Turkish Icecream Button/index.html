@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Turkish Ice Cream Landing Page</title>
+  <style>
+    /* Center the container vertically and horizontally */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+    
+    /* Container for the login page */
+    .login-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Login page title */
+    .login-title {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #333333;
+      text-align: center;
+    }
+    
+    /* Login form */
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    /* Form fields */
+    .form-field {
+      margin-bottom: 20px;
+      width: 300px;
+    }
+    
+    .form-field label {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    
+    .form-field input[type="text"],
+    .form-field input[type="password"] {
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 5px;
+      border: 1px solid #cccccc;
+    }
+    
+    /* Add animation and styles to the button */
+    .moving-button {
+      position: relative;
+      overflow: hidden;
+      pointer-events: none; /* Prevents button clicks */
+      padding: 15px 30px;
+      font-size: 24px;
+      border-radius: 5px;
+      background-color: #ff9933;
+      color: #ffffff;
+      border: none;
+      cursor: default; /* Set cursor to default */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+  <script>
+    // Move the button relative to the cursor movement
+    document.addEventListener('mousemove', function(event) {
+      var button = document.querySelector('.moving-button');
+      var container = document.querySelector('.login-container');
+      var containerRect = container.getBoundingClientRect();
+      var buttonRect = button.getBoundingClientRect();
+      
+      var offsetX = event.clientX - containerRect.left - buttonRect.width / 2;
+      var offsetY = event.clientY - containerRect.top - buttonRect.height / 2;
+      
+      button.style.transform = 'translate(' + offsetX + 'px, ' + offsetY + 'px)';
+    });
+  </script>
+</head>
+<body>
+  <div class="login-container">
+    <h2 class="login-title">Login Page</h2>
+    <form class="login-form">
+      <div class="form-field">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      </div>
+      <div class="form-field">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+      <button class="moving-button">Click Me!</button>
+    </form>
+  </div>
+</body>
+</html>
